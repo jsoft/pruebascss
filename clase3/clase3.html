@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clase 3</title>
+	<style type="text/css">
+		/* selector = */
+		p[title="parrafo"] {
+			color: red;
+		}
+		/* concordancia amplia */
+		p[title*="parrafo"] {
+			color: red;
+		}
+		/* concordancia */
+		p[title~="parrafo"] {
+			color: blue;
+		}
+		/* empieza por ... */
+		a[href^="https:"]{
+			color: green;
+			text-decoration: none;
+		}
+		a[href^="http:"]{
+			color: blue;
+			text-decoration: none;
+		}
+		/* termina por ... */
+		a[href$=".zip"]{
+			font-weight: bold;
+			font-size: 17px;
+			color: red;
+		}
+		img[alt~="coche"]{
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Clase 03</h1>
+	<p title="primer parrafo">este es el primer parrafo</p>
+	<p title="segundo parrafo">este es el segundo parrafo</p>
+	<p title="3 parrafo3">soy el tercer parrafo</p>
+	<br>
+	<a href="https://boluda.com">https://boluda.com</a>
+	<br>
+	<a href="http://google.com/?https:">http://google.com</a>
+	<br>
+	<a href="https://decarga.me/musica.zip">musica mp3</a>
+	<br><br>
+	<img src="coche-bmw.jpg" alt="coche bmw">
+	<img src="coche-mercedes.jpg" alt="coche mercedes">
+	<img src="coche-bebe.jpg" alt="coche bebe">
+</body>
+</html>
