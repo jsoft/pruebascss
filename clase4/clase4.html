@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clase 04</title>
+	<style type="text/css">
+		.menu ul{
+			background-color: #111;
+			list-style: none;
+			overflow: auto;
+			font-family: verdana;
+		}
+		.menu ul li{
+			color: #fff;
+			float: left;
+			padding: 15px;
+		}
+		form{
+			margin-left: 20px;
+		}
+	/* Selectores especiales */
+
+		/* Detecta que esta seleccionado */
+		input[type="checkbox"]:checked{
+			margin-right: 20px;
+		}
+
+		/* Detecta los inputs desactivados */
+		input:disabled{
+			background-color: #ddd;
+			border: 1px solid #aaa;
+		}
+		/* Detecta los inputs habilitados (por defecto) */
+		input[type="text"]:enabled{
+			border: 1px solid red;
+		}
+		/* Detecta donde esta el focus */
+		input[type="submit"]:focus{
+			background-color: #888;
+		}
+		/* Detecta cuando pasas el raton por encima */
+		input:hover{
+			background-color: #ddd;
+		}
+		.menu ul li:hover{
+			background-color: #555;
+		}
+		/* Detecta cuando el valor de un input es invalido */
+		input:invalid{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>clase 04</h1>
+	<div class="menu">
+		<ul>
+			<li>inicio</li>
+			<li>quien soy</li>
+			<li>contacto</li>
+		</ul>
+	</div>
+
+	<form action="">
+		<p>nombre</p>
+		<input type="text" name="nombre">
+		<p>apellido</p>
+		<input type="text" name="apellido" value="Peris" disabled>
+		<p>Email</p>
+		<input type="email" name="email">
+		<p>horario preferido</p>
+		<input type="checkbox" name="horario" value="mu">Mañana <br>
+		<input type="checkbox" name="horario" value="ho">Tarde <br>
+		<br>
+		<input type="submit" value="Mandar Datos">
+	</form>
+</body>
+</html>
