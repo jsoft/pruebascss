@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clase 05</title>
+	<style type="text/css">
+		span{
+			color: #555;
+			text-decoration: underline;
+			cursor: help;
+		}
+		.forma1:hover::after{
+			content: "Real Academia Española";
+			background-color: #ddd;
+			border: 1px solid #555;
+			color: #000;
+			padding: 5px;
+			position: absolute;
+		}
+		.forma2:hover::after{
+			content: "Real Academia Española";
+			background-color: #bbb;
+			border-top: 1px solid #333;
+			color:  #333;
+			font-weight: bold;
+			text-align: center;
+			position: fixed;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<h1>clase 05: RAE</h1>
+	<p>Hola, la <span class="forma1">RAE </span> es una web muy importante</p>
+	<p>Hola, la <span class="forma2">RAE </span> es una web muy importante</p>
+</body>
+</html>
