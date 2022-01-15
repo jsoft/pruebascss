@@ -1,8 +1,12 @@
 *{
 	font-family: verdana;
 }
+body{
+	background-color: #eee;
+}
 .engloba{
 	padding: 20px;
+	background-color: #fff;
 }
 .cabecera{
 	overflow: auto;
