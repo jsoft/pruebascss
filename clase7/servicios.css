@@ -1,0 +1,19 @@
+.servicios{
+	padding: 0px 50px 0px 50px;
+}
+.servicios .cajas{
+	overflow: auto;
+}
+.servicios .cajas .caja{
+	float: left;
+	width: 30%;
+	margin-left: 10%;
+
+	border: 1px solid #26c;
+	padding: 10px;
+	text-align: center;
+	background-color: #e5edf9;
+}
+.servicios .cajas .caja h2{
+	color: #26c;
+}

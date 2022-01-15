@@ -1,0 +1,20 @@
+.contacto{
+	padding: 0px 50px 0px 50px;
+	text-align: center;
+}
+
+.contacto input, .contacto textarea {
+	width: 300px;
+	font-size: 15px;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+.contacto input[type="submit"]{
+	background-color: #26c;
+	border: none;
+	color: #fff;
+	padding: 10px;
+}
+.contacto input[type="submit"]:hover{
+	background-color: #15a;
+}

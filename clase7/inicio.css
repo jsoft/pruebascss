@@ -1,0 +1,18 @@
+/* CSS de inicio */
+
+.inicio{
+	padding: 0px 50px 0px 50px;
+}
+.inicio .boton{
+	text-align: center;
+}
+.inicio .boton button{
+	background-color: #26c;
+	font-size: 15px;
+	border: none;
+	padding: 10px;
+	color: #fff;
+}
+.inicio .boton button:hover{
+	background-color: #15a;
+}
