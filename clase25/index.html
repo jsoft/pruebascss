@@ -7,7 +7,8 @@
 <style>
 .container{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr repeat(5, [col] 50px);
+  grid-template-rows: 1fr repeat(5, 50px) repeat(5, 50px) 1fr;
   max-width: 900px;
   margin: auto;
   text-align: center;
@@ -21,7 +22,7 @@
 }
 
 .start{
-
+  grid-column: col / 2;
 } 
 </style>
 </head>
