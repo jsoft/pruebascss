@@ -7,8 +7,8 @@
 <style>
 .container{
   display: grid;
-  grid-template-rows: [row-1-start] 1fr [row-2-start] 1fr [row-2-end];
-  grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-1-end];
+  grid-template-rows: [row-1-start] 1fr [row-2-start] 1fr [row-end];
+  grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-end];
   max-width: 900px;
   margin: auto;
   text-align: center;
@@ -22,10 +22,8 @@
 }
 
 .start{
-  grid-row-start: row-2-start;
-  grid-row-end: row-2-start;
-  grid-column-start: col-2-start;
-  grid-column-end: col-2-start;
+  grid-row: row-1-start / row-end;
+  grid-column: col-2-start / col-end;
 } 
 </style>
 </head>
