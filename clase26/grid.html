@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso CSS Grid</title>
+<style>
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: orange;
+}
+.main{
+  flex: 3;
+  background-color: aqua;
+}
+.sidebar {
+  background-color: red;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: green;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: gray;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+      <p>Mi header</p>
+    </header>
+    <div class="wrapper">
+      <div class="main">
+        <h2>Mi contenido</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+        </p>
+      </div>
+      <div class="sidebar">
+        <h3>Sidebar</h3>
+      </div>
+    </div>
+    <footer>
+      <p>Mi footer con flexbox</p>
+    </footer>
+</div>
+
+</body>
+</html>
