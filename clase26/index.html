@@ -7,7 +7,9 @@
 <style>
 .container{
   display: grid;
-  grid-template-areas: "a a b";
+  grid-template-areas: 
+    "a a b"
+    "c c b";
   max-width: 900px;
   margin: auto;
   text-align: center;
@@ -24,6 +26,10 @@
 .item-b{
   grid-area: b;
 }
+
+.item-c{
+  grid-area: c;
+}
 </style>
 </head>
 <body>
@@ -34,7 +40,7 @@
     <div class="item">3</div>
     <div class="item">4</div>
     <div class="item">5</div>
-    <div class="item">6</div>
+    <div class="item-c">6</div>
     <div class="item">7</div>
     <div class="item">8</div>
     <div class="item">9</div>
