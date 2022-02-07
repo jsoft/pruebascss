@@ -16,21 +16,36 @@
   margin: auto;
   text-align: center;
   background-color: orange;
-  align-items: center;
-  justify-items: center;
 }
-.item{
+.item-1{
   grid-area: content;
   border: 1px solid black;
   padding: 20px;
   font-size: 30px;
+  justify-self: start;
+}
+.item-2{
+  grid-area: content;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  justify-self: center;
+}
+.item-3{
+  grid-area: content;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  justify-self: end;
 }
 </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="item">1</div>
+    <div class="item-1">1</div>
+    <div class="item-2">2</div>
+    <div class="item-3">3</div>
 </div>
 
 </body>
