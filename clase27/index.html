@@ -8,11 +8,12 @@
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 80px 80px;
+  grid-template-rows: 120px 120px;
   grid-template-areas: 
     "content content"
     "content content";
   max-width: 900px;
+  height: 800px;
   margin: auto;
   text-align: center;
   background-color: orange;
@@ -22,21 +23,21 @@
   border: 1px solid black;
   padding: 20px;
   font-size: 30px;
-  justify-self: start;
+  align-self: start;
 }
 .item-2{
   grid-area: content;
   border: 1px solid black;
   padding: 20px;
   font-size: 30px;
-  justify-self: center;
+  align-self: center;
 }
 .item-3{
   grid-area: content;
   border: 1px solid black;
   padding: 20px;
   font-size: 30px;
-  justify-self: end;
+  align-self: end;
 }
 </style>
 </head>
