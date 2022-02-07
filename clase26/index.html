@@ -7,6 +7,7 @@
 <style>
 .container{
   display: grid;
+  grid-template-areas: "a a b";
   max-width: 900px;
   margin: auto;
   text-align: center;
@@ -17,14 +18,19 @@
   border: 1px solid black;
   padding: 20px;
   font-size: 30px;
+  grid-area: a;
+}
+
+.item-b{
+  grid-area: b;
 }
 </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="item start">1</div>
-    <div class="item">2</div>
+    <div class="item">1</div>
+    <div class="item-b">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
     <div class="item">5</div>
