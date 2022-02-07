@@ -9,20 +9,15 @@
   display: grid;
   grid-template-areas: 
     "header header"
-    "wrapper wrapper"
+    "main sidebar"
     "footer footer";
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 1fr 40px;
+  grid-template-columns: 1fr 200px;
   max-width: 900px;
   margin: auto;
   text-align: center;
 }
-.wrapper {
-  grid-area: wrapper;
-  display: grid;
-  grid-template-areas: "main sidebar";
-  grid-template-columns: 3fr 1fr;
-  background-color: orange;
-}
+
 .main{
   grid-area: main;
   background-color: aqua;
@@ -34,6 +29,7 @@
 header {
   grid-area: header;
   background-color: green;
+  grid-row-start: header-start;
 }
 footer {
   grid-area: footer;
@@ -47,20 +43,21 @@ footer {
     <header>
       <p>Mi header</p>
     </header>
-    <div class="wrapper">
-      <div class="main">
-        <h2>Mi contenido</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
-        </p>
-      </div>
-      <div class="sidebar">
-        <h3>Sidebar</h3>
-      </div>
+    
+    <div class="main">
+      <h2>Mi contenido</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+      </p>
     </div>
+
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+    </div>
+    
     <footer>
       <p>Mi footer con flexbox</p>
     </footer>
