@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curso CSS Grid</title>
+<style>
+.container{
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "main sidebar"
+    "footer footer";
+  grid-template-rows: 80px 1fr 40px;
+  grid-template-columns: 1fr 200px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.main{
+  grid-area: main;
+  background-color: aqua;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: red;
+}
+header {
+  background-color: green;
+  grid-row: header-start / main-start;
+  grid-column: footer-start / sidebar-end;
+}
+footer {
+  grid-area: footer;
+  background-color: gray;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+      <p>Mi header</p>
+    </header>
+    
+    <div class="main">
+      <h2>Mi contenido</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+      </p>
+    </div>
+
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+    </div>
+    
+    <footer>
+      <p>Mi footer con grid</p>
+    </footer>
+</div>
+
+</body>
+</html>
