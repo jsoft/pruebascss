@@ -49,6 +49,24 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+header nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  justify-self: start;
+  align-items: end;
+}
+header nav li {
+  margin-right: 15px;
+}
+header button{
+  border: none;
+  color: #fff;
+  background-color: indianred;
+  text-transform: uppercase;
+  justify-self: end;
+  padding: 8px 25px;
+}
 footer {
   grid-area: footer;
   background-color: gray;
