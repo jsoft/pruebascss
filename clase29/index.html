@@ -42,9 +42,12 @@ body{
   background-color: red;
 }
 header {
-  background-color: green;
   grid-row: header-start / main-start;
   grid-column: footer-start / sidebar-end;
+  color: indigo;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 footer {
   grid-area: footer;
@@ -56,7 +59,12 @@ footer {
 
 <div class="container">
     <header>
-      <p>Mi header</p>
+      <nav>
+        <li><a href="#"><h1>Logo</h1></a></li>
+        <li><a href="#">Menu1</a></li>
+        <li><a href="#">Menu2</a></li>
+      </nav>
+      <button>CTA</button>
     </header>
     
     <div class="main">
