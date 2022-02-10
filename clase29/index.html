@@ -89,6 +89,16 @@ footer p {
   font-size: 16px;
   color: gray;
 }
+@media(max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+}
 </style>
 </head>
 <body>
